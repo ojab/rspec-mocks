@@ -5,6 +5,7 @@ name: RSpec CI
 on:
   push:
     branches:
+      - 'ruby-3.2'
       - 'main'
       - '*-maintenance'
       - '*-dev'
@@ -38,6 +39,7 @@ jobs:
     strategy:
       matrix:
         ruby:
+          - '3.2.0-preview3'
           - '3.1'
           - '3.0'
           - 2.7
